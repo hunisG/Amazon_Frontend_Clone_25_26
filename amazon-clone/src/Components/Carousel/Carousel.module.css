@@ -1,0 +1,38 @@
+
+.hero__img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto; /* let image decide height or set a fixed height if you want */
+}
+
+.hero__img img {
+  display: block;
+  width: 100%;
+  height: auto; /* or use object-fit: cover and fixed height */
+}
+
+/* bottom gradient overlay */
+.hero__img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px; /* adjust to taste */
+  pointer-events: none;
+  z-index: 2;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 225, 225, 0),
+    rgba(225, 225, 225, 1)
+  );
+}
+
+/* example for content placed over the image */
+.hero__content {
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+  z-index: 3;
+}
