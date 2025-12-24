@@ -6,7 +6,7 @@ const Footer = () => {
       {/* Top Section */}
       <div className={styles.top}>
         <div className={styles.column}>
-          <h4>Get to Know Us tekyruwal test </h4>
+          <h4>Get to Know Us </h4>
           <a href="#">About</a>
           <a href="#">Careers</a>
           <a href="#">Contact</a>
